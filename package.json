@@ -1,0 +1,11 @@
+{
+  "name": "dsa-advanced.js",
+  "version": "1.0.0",
+  "description": "This is a one stop solution to utilise ready to use Data Structures and Algorithms in JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnav Savant",
+  "license": "ISC"
+}
