@@ -6,7 +6,7 @@ class Node {
 	}
 }
 
-class BinarySearchTree {
+class BinaryTree {
 	constructor() {
 		this.root = null;
 	}
@@ -22,19 +22,14 @@ class BinarySearchTree {
 		let current = this.root;
 
 		while (true) {
-			if (value === current.value) return undefined;
-			if (value < current.value) {
-				if (!current.left) {
-					current.left = newNode;
-					return this;
-				}
-				current = current.left;
+			if (!current.left) {
+				current.left = newNode;
+				return this;
+			} else if (!current.right) {
+				current.right = newNode;
+				return this;
 			} else {
-				if (!current.right) {
-					current.right = newNode;
-					return this;
-				}
-				current = current.right;
+				current = current.left;
 			}
 		}
 	}
@@ -45,35 +40,17 @@ class BinarySearchTree {
 		let found = false;
 
 		while (current && !found) {
-			if (value < current.value) {
-				current = current.left;
-			} else if (value > current.value) {
-				current = current.right;
-			} else {
+			if (value === current.value) {
 				found = true;
+			} else if (value < current.value) {
+				current = current.left;
+			} else {
+				current = current.right;
 			}
 		}
 
 		if (!found) return false;
 		return current;
-	}
-
-	contains(value) {
-		if (!this.root) return false;
-		let current = this.root;
-		let found = false;
-
-		while (current && !found) {
-			if (value < current.value) {
-				current = current.left;
-			} else if (value > current.value) {
-				current = current.right;
-			} else {
-				return true;
-			}
-		}
-
-		return false;
 	}
 
 	bfs() {
@@ -137,4 +114,4 @@ class BinarySearchTree {
 	}
 }
 
-module.export = BinarySearchTree;
+module.export = BinaryTree;
