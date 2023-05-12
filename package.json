@@ -1,10 +1,14 @@
 {
   "name": "advanced-dsa-package.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a one stop solution to utilise ready to use Data Structures and Algorithms in JS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/ArnavSavant/DSA-NPM-Package.git"
   },
   "author": "Arnav Savant",
   "license": "ISC"
