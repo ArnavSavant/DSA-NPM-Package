@@ -1,6 +1,6 @@
 {
   "name": "advanced-dsa-package.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a one stop solution to utilise ready to use Data Structures and Algorithms in JS.",
   "main": "index.js",
   "scripts": {
