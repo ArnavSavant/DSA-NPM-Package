@@ -77,4 +77,4 @@ class Graph {
 	}
 }
 
-module.export = Graph;
+module.exports = Graph;

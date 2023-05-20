@@ -50,4 +50,4 @@ class Trie {
 	}
 }
 
-module.export = Trie;
+module.exports = Trie;

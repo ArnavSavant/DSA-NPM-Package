@@ -137,4 +137,4 @@ class BinarySearchTree {
 	}
 }
 
-module.export = BinarySearchTree;
+module.exports = BinarySearchTree;

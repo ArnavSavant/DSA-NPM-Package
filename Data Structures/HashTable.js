@@ -60,4 +60,4 @@ class HashTable {
 	}
 }
 
-module.export = HashTable;
+module.exports = HashTable;
